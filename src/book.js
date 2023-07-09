@@ -1,5 +1,5 @@
 function createTitle(title) {
-  return "The " + title
+  return  `The ${title}`
 }
 
 function buildMainCharacter(name, age, pronouns) {
@@ -35,6 +35,7 @@ return book
 }
 
 function editBook(book) {
+  console.log(book)
   return book.pageCount *= .75
 }
 
