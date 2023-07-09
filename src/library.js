@@ -19,14 +19,9 @@ function addBook(library, book) {
   return library
 }
 
-
+// The conditional logic in the checkoutBook implementation code is not working properly. Currently, I am able to meet one condition in the test or the other, but not both. It appears, the value of bookFound is not being reassigned. Planning to return to this code.
 
 function checkoutBook(library, bookTitle, genre) {
-  // console.log('LIBRARY', library)
-  // console.log('BOOK', bookTitle)
-  // console.log('GENRE', genre)
-  // console.log("bOOks:", books)
-
   var bookFound = false
   for (let i = 0; i < library.shelves[genre].length; i++) {
     if (library.shelves[genre][i].title === bookTitle) {
@@ -34,7 +29,6 @@ function checkoutBook(library, bookTitle, genre) {
       bookFound = true
     }
   }
-  // console.log(bookFound)
   if (bookFound === true) {
     return `You have now checked out ${bookTitle} from the ${library.name}.`
   } else {
