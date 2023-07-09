@@ -18,7 +18,7 @@ var pages = 999
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
-pages = 999 / 4
+pages = pages / 4
 console.log(pages)
 
 
@@ -83,7 +83,7 @@ console.log(books[2])
 var belowTwoHundred = [12, 90, 188, 42, 87, 56, 31, 18, 166, 65, 23, 13]
 
 // Write the code to access the 5th element of the array, using bracket notation.
-console.log(belowTwoHundred[4])
+var fifthElement = belowTwoHundred[4]
 
 //------------------------- Objects -------------------------//
 
